@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelmX - Smart Helmet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Montserrat', sans-serif; background: #f4f4f4; color: #222; }
+    header { background: #000; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { margin: 0; font-size: 28px; }
+    nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: 500; }
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    .hero { text-align: center; background: linear-gradient(to right, #111, #333); color: #fff; padding: 80px 20px; }
+    .features, .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .feature, .product { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+    .product img { width: 100%; border-radius: 8px; }
+    .contact form { display: flex; flex-direction: column; max-width: 500px; margin: auto; }
+    .contact input, .contact textarea { padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
+    .contact button, .product button { margin-top: 15px; background: #000; color: #fff; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+    footer { background: #111; color: #fff; padding: 20px; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HelmX</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#shop">Shop</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="/login">Login</a>
+      <a href="/signup">Sign Up</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Reimagine Riding with HelmX</h2>
+    <p>The world's smartest helmet, engineered for safety and connectivity.</p>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature">
+      <h3>Navigation</h3><p>Turn-by-turn directions inside your helmet.</p>
+    </div>
+    <div class="feature">
+      <h3>Voice Assistant</h3><p>Control hands-free with AI.</p>
+    </div>
+    <div class="feature">
+      <h3>Crash Detection</h3><p>Emergency alerts for accidents.</p>
+    </div>
+    <div class="feature">
+      <h3>Bluetooth</h3><p>Connect to your phone or smartwatch.</p>
+    </div>
+  </section>
+
+  <section id="shop">
+    <h2>Shop HelmX Helmets</h2>
+    <div class="products">
+      <div class="product">
+        <img src="PBLproject.pnb.2.jpg">
+        <h4>HelmX Pro</h4><p>₹8,999</p>
+        <button onclick="location.href='https://wa.me/9520176759?text=I%20want%20to%20buy%20HelmX%20Pro'">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="PBLproject.pnb.webp">
+        <h4>HelmX Lite</h4><p>₹5,499</p>
+        <button onclick="location.href='https://wa.me/9520176759?text=I%20want%20to%20buy%20HelmX%20Lite'">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images.jpeg">
+        <h4>HelmX Tour</h4><p>₹7,299</p>
+        <button onclick="location.href='https://wa.me/9520176759?text=I%20want%20to%20buy%20HelmX%20Tour'">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Helmet Gallery</h2>
+    <div class="products">
+      <img src="https://via.placeholder.com/250x200.png?text=Helmet+1">
+      <img src="https://via.placeholder.com/250x200.png?text=Helmet+2">
+      <img src="https://via.placeholder.com/250x200.png?text=Helmet+3">
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form action="/contact" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HelmX. All rights reserved.</p>
+  </footer>
+</body>
+</html>
