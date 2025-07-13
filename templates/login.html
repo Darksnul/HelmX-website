@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HelmX - Login</title>
+    <title>HelmX Login</title>
     <style>
         body {
             margin: 0;
@@ -45,6 +45,11 @@
         .container input[type="submit"]:hover {
             background: #2980b9;
         }
+        .container a {
+            color: #f1c40f;
+            text-decoration: none;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +60,9 @@
             <input type="password" name="password" placeholder="Password" required>
             <input type="submit" value="Login">
         </form>
+        <p style="text-align:center; margin-top:15px;">
+            Don't have an account? <a href="/signup">Sign up</a>
+        </p>
     </div>
 </body>
 </html>
