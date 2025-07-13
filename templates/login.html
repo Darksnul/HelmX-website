@@ -1,15 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Login</title>
+    <meta charset="UTF-8">
+    <title>HelmX - Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+            backdrop-filter: blur(10px);
+            width: 350px;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .container input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            background: #34495e;
+            color: #fff;
+            font-size: 14px;
+        }
+        .container input[type="submit"] {
+            background: #4ca1af;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .container input[type="submit"]:hover {
+            background: #2980b9;
+        }
+    </style>
 </head>
 <body>
-  <h2>Login</h2>
-  <form action="/login" method="POST">
-    <input type="text" name="username" placeholder="Username" required><br><br>
-    <input type="password" name="password" placeholder="Password" required><br><br>
-    <button type="submit">Login</button>
-  </form>
-  <p>Don't have an account? <a href="/signup">Sign up here</a></p>
+    <div class="container">
+        <h2>HelmX Login</h2>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
 </body>
 </html>
